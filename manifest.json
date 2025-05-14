@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "AdBlock Toggle",
+  "version": "1.0",
+  "description": "Включает/отключает рекламу по клику",
+  "permissions": ["declarativeNetRequest", "storage", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": {
+      "64": "icons/icon.png"
+    }
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "block_ads",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  }
+}
