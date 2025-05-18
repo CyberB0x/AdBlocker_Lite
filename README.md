@@ -31,7 +31,7 @@
 
 1. Клонируй или скачай репозиторий:
    ```bash
-   git clone https://github.com/yourname/my-adblocker
+   git clone https://github.com/CyberB0x/AdBlocker_Lite
 
 ## 📁 Структура
 ```
